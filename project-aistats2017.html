@@ -5,23 +5,30 @@ title: Work
 
 <div class="row">
 	<div class="small-12 medium-7 large-7 columns">
-		<h2>Extended Abstract: Distributed Optimization of Multi-Class SVMs</h2>
+		<h2>Distributed Optimization of Multi-Class SVMs</h2>
 		<p>
-		  State-of-the-art exact solvers for linear multi-class SVMs require a time complexity
-		  of O(d n C^2) and space complexity of O(d C + n C^2). This puts heavy limitations on the amount
-		  of classes (denoted C), where these solvers are applicable, especially for high
-		  dimensional but sparse data. Motivated by recent interest in multi-class
-		  problems with massive numbers of classes, we draft a distributed algorithm where
-		  we can employ up to O(C) machines with small computational overhead, while the
-		  model is evenly split over all machines. This allows us to compare several classical
-		  MC-SVM formulations on an unprecedented scale.
+		  Training of one-vs.-rest SVMs can be parallelized
+		  over the number of classes in a straight
+		  forward way. Given enough computational
+		  resources, one-vs.-rest SVMs can thus be
+		  trained on data involving a large number of
+		  classes. The same cannot be stated, however,
+		  for the so-called all-in-one SVMs, which
+		  require solving a quadratic program of size
+		  quadratically in the number of classes. We
+		  develop distributed algorithms for two all-in-one
+		  SVM formulations (Lee et al. and Weston
+		  and Watkins) that parallelize the computation
+		  evenly over the number of classes. This
+		  allows us to compare these models to one-vs.-rest
+		  SVMs on unprecedented scale. The
+		  results indicate superior accuracy on text classification data.
 		</p>
 	</div>
 	<div class="small-12 medium-5 large-5 columns">
 		<div class="lined-list">
 			<ul>
-				<li><strong>Conference:</strong> NIPS</li>
-				<li><strong>Workshop:</strong> Extreme Classification</li>
+				<li><strong>Conference:</strong> ??</li>
 				<li><strong>Work with:</strong>Julian Zimmert, Urun Dogan, Marius Kloft</li>
 				<li><strong>Year:</strong> 2016</li>
 			</ul>
@@ -35,8 +42,8 @@ title: Work
 		
 		<!-- Begin project image -->
 		<div class="project-img" style="filter: url('#blur'); filter: blur(5px);">
-			<img src="img/projects/nips2016.jpg" alt="Barcelona" />
-			<h6>Barcelona</h6>
+			<img src="img/projects/random.jpg" alt="RandomCity" />
+			<h6>??</h6>
 		</div>
 		<!-- End project image -->
 
